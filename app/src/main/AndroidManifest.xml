@@ -22,6 +22,7 @@
         </activity>
         <activity android:name=".core.base.ui.BaseActivity" />
         <activity android:name=".login.LoginActivity" />
+        <activity android:name=".rank.RankActivity" />
     </application>
 
 </manifest>

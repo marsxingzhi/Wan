@@ -5,6 +5,8 @@ import com.abyte.wan.login.LoginActivity
 import com.abyte.wan.login.vm.LoginModule
 import com.abyte.wan.main.MainActivity
 import com.abyte.wan.main.vm.MainFragmentModule
+import com.abyte.wan.rank.RankActivity
+import com.abyte.wan.rank.module.RankModule
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -23,4 +25,9 @@ abstract class ActivityModule {
     @PerActivity
     @ContributesAndroidInjector(modules = [LoginModule::class])
     abstract fun contributeLoginActivity(): LoginActivity
+
+
+    @PerActivity
+    @ContributesAndroidInjector(modules = [RankModule::class])
+    abstract fun contributeRankActivity(): RankActivity
 }

@@ -14,7 +14,6 @@ import com.abyte.wan.main.model.ArticlePage
 import com.abyte.wan.main.vm.MainViewModel
 import com.github.jdsjlzx.recyclerview.LuRecyclerViewAdapter
 import kotlinx.android.synthetic.main.main_fragment_home.*
-import org.jetbrains.anko.sdk15.listeners.onClick
 import org.jetbrains.anko.support.v4.onRefresh
 import javax.inject.Inject
 

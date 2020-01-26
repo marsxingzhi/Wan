@@ -14,6 +14,7 @@ import com.abyte.core.ext.yes
 import com.abyte.wan.login.LoginActivity
 import com.abyte.wan.main.nav.NavigationController
 import com.abyte.wan.main.nav.NavigationItem
+import com.abyte.wan.rank.RankActivity
 import com.abyte.wan.user.UserManager
 import com.abyte.wan.user.model.UserEvent
 import kotlinx.android.synthetic.main.activity_main.*
@@ -107,5 +108,6 @@ class MainActivity : BaseActivity() {
 
     private fun onRankClick() {
         log("click rank")
+        RankActivity.startRankActivity(this)
     }
 }

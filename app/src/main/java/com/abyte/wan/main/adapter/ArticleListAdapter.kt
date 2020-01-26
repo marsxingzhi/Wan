@@ -6,11 +6,11 @@ import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.abyte.core.ext.log
 import com.abyte.wan.R
-import com.abyte.wan.core.base.adapter.CommonListAdapter
+import com.abyte.wan.core.base.adapter.CommonCardListAdapter
 import com.abyte.wan.main.model.Article
 import kotlinx.android.synthetic.main.item_article.view.*
 
-class ArticleListAdapter : CommonListAdapter<Article>(R.layout.item_article) {
+class ArticleListAdapter : CommonCardListAdapter<Article>(R.layout.item_article) {
 
     override fun onItemClick(itemView: View, article: Article) {
         log("ArticleAdapter---onItemClick")
