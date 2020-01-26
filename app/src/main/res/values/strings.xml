@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Wan</string>
+    <string name="home">home</string>
+    <string name="knowledge">knowledge</string>
+    <string name="wechat">wechat</string>
+    <string name="project">project</string>
+    <string name="me">me</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="prompt_username">用户名</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+</resources>

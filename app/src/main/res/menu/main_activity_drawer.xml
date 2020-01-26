@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 单选-->
+    <group android:checkableBehavior="single" />
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/knowledge"
+        android:icon="@drawable/ic_knowledge"
+        android:title="@string/knowledge" />
+
+    <item
+        android:id="@+id/wechat"
+        android:icon="@drawable/ic_wechat"
+        android:title="@string/wechat" />
+
+    <item
+        android:id="@+id/project"
+        android:icon="@drawable/ic_project"
+        android:title="@string/project" />
+
+    <item
+        android:id="@+id/me"
+        android:icon="@drawable/ic_me"
+        android:title="@string/me" />
+
+</menu>
