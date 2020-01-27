@@ -12,18 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a7a5cfe-36d9-4602-a81b-9bd8fc1b2486" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/abyte/wan/main/vm/MainFragmentModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/abyte/wan/main/vm/MainFragmentModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/abyte/wan/project/ProjectFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/abyte/wan/project/ProjectFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/abyte/wan/me/MeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/abyte/wan/me/MeFragment.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +24,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="988b5c334a59553148" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_26" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -62,22 +52,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/abyte/wan/wechat/WechatFragment.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/abyte/wan/project/ProjectFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
-              <folding>
-                <element signature="e#30#176#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="79">
+              <caret line="58" column="14" lean-forward="true" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/abyte/wan/project/ProjectFragment.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/abyte/wan/me/MeFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+            <state relative-caret-position="288">
+              <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -179,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/abyte/wan/core/base/adapter/ViewPageAdapterList.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/abyte/wan/core/base/model/FragmentData.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/abyte/wan/core/base/adapter/CommonViewPageAdater.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/abyte/wan/view/ActionBarController.kt" />
@@ -230,6 +216,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/abyte/wan/project/module/ProjectFragmentModule.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/abyte/wan/main/vm/MainFragmentModule.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/abyte/wan/project/ProjectFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/abyte/wan/me/MeFragment.kt" />
       </list>
     </option>
   </component>
@@ -621,13 +608,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/abyte/wan/core/base/ui/BaseFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/abyte/wan/view/ActionBarController.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -1020,8 +1000,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/abyte/wan/project/ProjectFragment.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        <state relative-caret-position="79">
+          <caret line="58" column="14" lean-forward="true" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/abyte/wan/me/MeFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="78" selection-start-line="12" selection-start-column="78" selection-end-line="12" selection-end-column="78" />
         </state>
       </provider>
     </entry>
