@@ -2,7 +2,7 @@ package com.abyte.wan.login.vm
 
 import androidx.lifecycle.ViewModel
 import com.abyte.core.di.ViewModelKey
-import com.abyte.core.services.RETROFIT
+import com.abyte.core.services.retrofit
 import com.abyte.wan.login.api.LoginApi
 import com.abyte.wan.login.repo.LoginRepository
 import dagger.Module
@@ -14,7 +14,7 @@ class LoginModule {
 
     @Provides
     fun provideAuthApi(): LoginApi {
-        return RETROFIT.create(LoginApi::class.java)
+        return retrofit.create(LoginApi::class.java)
     }
 
     @Provides

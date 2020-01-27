@@ -1,7 +1,7 @@
 package com.abyte.wan.login.api
 
 import com.abyte.core.response.BaseResponse
-import com.abyte.core.services.RETROFIT
+import com.abyte.core.services.retrofit
 import com.abyte.wan.login.model.User
 import io.reactivex.Observable
 import retrofit2.http.Field
@@ -23,4 +23,4 @@ interface LoginApi {
     fun logout(): Observable<BaseResponse<Any>>
 }
 
-object LoginService : LoginApi by RETROFIT.create(LoginApi::class.java)
+object LoginService : LoginApi by retrofit.create(LoginApi::class.java)

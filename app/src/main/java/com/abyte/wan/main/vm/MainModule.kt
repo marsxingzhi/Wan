@@ -2,7 +2,7 @@ package com.abyte.wan.main.vm
 
 import androidx.lifecycle.ViewModel
 import com.abyte.core.di.ViewModelKey
-import com.abyte.core.services.RETROFIT
+import com.abyte.core.services.retrofit
 import com.abyte.wan.main.api.MainApi
 import com.abyte.wan.main.repo.MainRepository
 import dagger.Module
@@ -14,7 +14,7 @@ class MainModule {
 
     @Provides
     fun provideMainApi(): MainApi {
-        return RETROFIT.create(MainApi::class.java)
+        return retrofit.create(MainApi::class.java)
     }
 
     @Provides

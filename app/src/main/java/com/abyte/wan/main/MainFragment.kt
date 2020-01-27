@@ -31,6 +31,8 @@ class MainFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        // 首页不展示TabLayout
+        (activity as MainActivity).actionBarController.setupWithViewPager(null)
 
         mainViewModel = ViewModelProviders.of(this, mFactory).get(MainViewModel::class.java)
 

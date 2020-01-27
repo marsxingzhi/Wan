@@ -17,6 +17,7 @@ import com.abyte.wan.main.nav.NavigationItem
 import com.abyte.wan.rank.RankActivity
 import com.abyte.wan.user.UserManager
 import com.abyte.wan.user.model.UserEvent
+import com.abyte.wan.view.ActionBarController
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_simple.*
 import kotlinx.android.synthetic.main.main_app_bar.*
@@ -31,6 +32,10 @@ class MainActivity : BaseActivity() {
             ::onHeaderClick,
             ::onRankClick
         )
+    }
+
+    val actionBarController by lazy {
+        ActionBarController(this)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

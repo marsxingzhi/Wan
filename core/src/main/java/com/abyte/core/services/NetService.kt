@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit
 
 private const val BASE_URL = "https://www.wanandroid.com"
 
-val RETROFIT by lazy {
+val retrofit by lazy {
     Retrofit.Builder()
         .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
         .addConverterFactory(GsonConverterFactory.create())

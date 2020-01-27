@@ -51,7 +51,7 @@ class NavigationController(
                 onHeaderClick()
             }
 
-            navigationView.ivRank.onClick {
+            navigationView.containerRankIcon.onClick {
                 onRankClick()
             }
         }

@@ -2,7 +2,7 @@ package com.abyte.wan.rank.module
 
 import androidx.lifecycle.ViewModel
 import com.abyte.core.di.ViewModelKey
-import com.abyte.core.services.RETROFIT
+import com.abyte.core.services.retrofit
 import com.abyte.wan.rank.api.RankApi
 import com.abyte.wan.rank.repo.RankRepository
 import com.abyte.wan.rank.vm.RankViewModel
@@ -15,7 +15,7 @@ class RankModule {
 
     @Provides
     fun provideRankApi(): RankApi {
-        return RETROFIT.create(RankApi::class.java)
+        return retrofit.create(RankApi::class.java)
     }
 
     @Provides

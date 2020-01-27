@@ -2,6 +2,8 @@ package com.abyte.wan.main.vm
 
 import com.abyte.core.di.PerFragment
 import com.abyte.wan.knowledge.KnowledgeFragment
+import com.abyte.wan.knowledge.module.KnowledgeFragmentModule
+import com.abyte.wan.knowledge.module.KnowledgeModule
 import com.abyte.wan.main.MainFragment
 import com.abyte.wan.me.MeFragment
 import com.abyte.wan.project.ProjectFragment
@@ -17,7 +19,7 @@ abstract class MainFragmentModule {
     abstract fun contributeMainFragment(): MainFragment
 
     @PerFragment
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(modules = [KnowledgeFragmentModule::class, KnowledgeModule::class])
     abstract fun contributeKnowledgeFragment(): KnowledgeFragment
 
 

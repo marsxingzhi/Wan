@@ -1,10 +1,16 @@
 package com.abyte.wan.knowledge
 
-import com.abyte.wan.R
-import com.abyte.wan.core.base.ui.BaseFragment
+import com.abyte.core.ext.log
+import com.abyte.wan.core.base.model.FragmentPage
+import com.abyte.wan.core.base.ui.CommonViewPageFragment
 
-class KnowledgeFragment :BaseFragment(){
+class KnowledgeFragment : CommonViewPageFragment() {
 
-    override fun getLayoutId(): Int  = R.layout.main_fragment_knowledge
-
+    override fun getFragmentPages(): List<FragmentPage> {
+        log("KnowledgeFragment---getFragmentPages")
+        return listOf(
+            FragmentPage(SystemTreeFragment(), "体系"),
+            FragmentPage(KnowledgeNavigationFragment(), "导航")
+        )
+    }
 }
