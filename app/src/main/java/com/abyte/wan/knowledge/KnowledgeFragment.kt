@@ -2,9 +2,9 @@ package com.abyte.wan.knowledge
 
 import com.abyte.core.ext.log
 import com.abyte.wan.core.base.model.FragmentPage
-import com.abyte.wan.core.base.ui.CommonViewPageFragment
+import com.abyte.wan.core.base.ui.CommonPagerFragment
 
-class KnowledgeFragment : CommonViewPageFragment() {
+class KnowledgeFragment : CommonPagerFragment() {
 
     override fun getFragmentPages(): List<FragmentPage> {
         log("KnowledgeFragment---getFragmentPages")

@@ -8,6 +8,8 @@ import com.abyte.wan.main.MainFragment
 import com.abyte.wan.me.MeFragment
 import com.abyte.wan.project.ProjectFragment
 import com.abyte.wan.wechat.WechatFragment
+import com.abyte.wan.wechat.module.WechatFragmentModule
+import com.abyte.wan.wechat.module.WechatModule
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -24,7 +26,7 @@ abstract class MainFragmentModule {
 
 
     @PerFragment
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(modules = [WechatFragmentModule::class, WechatModule::class])
     abstract fun contributeWechatFragment(): WechatFragment
 
 
