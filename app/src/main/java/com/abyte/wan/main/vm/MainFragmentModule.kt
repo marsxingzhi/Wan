@@ -7,6 +7,8 @@ import com.abyte.wan.knowledge.module.KnowledgeModule
 import com.abyte.wan.main.MainFragment
 import com.abyte.wan.me.MeFragment
 import com.abyte.wan.project.ProjectFragment
+import com.abyte.wan.project.module.ProjectFragmentModule
+import com.abyte.wan.project.module.ProjectModule
 import com.abyte.wan.wechat.WechatFragment
 import com.abyte.wan.wechat.module.WechatFragmentModule
 import com.abyte.wan.wechat.module.WechatModule
@@ -31,7 +33,7 @@ abstract class MainFragmentModule {
 
 
     @PerFragment
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(modules = [ProjectFragmentModule::class, ProjectModule::class])
     abstract fun contributeProjectFragment(): ProjectFragment
 
 
