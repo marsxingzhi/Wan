@@ -57,7 +57,12 @@ class ProjectFragment : BaseFragment() {
         val arr = ArrayList<FragmentPage>()
         for (chapterData in list) {
             log("ProjectFragment---createFragments---name = ${chapterData.name}")
-            arr.add(FragmentPage(ProjectArticleFragment(), chapterData.name))
+            arr.add(
+                FragmentPage(
+                    ProjectArticleFragment.newInstance(chapterData.id),
+                    chapterData.name
+                )
+            )
         }
         viewPageAdapter.fragmentPageData.addAll(arr)
     }
