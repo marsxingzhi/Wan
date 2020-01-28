@@ -56,7 +56,7 @@ class WechatFragment : BaseFragment() {
         val arr = ArrayList<FragmentPage>()
         for (chapterData in list) {
             log("WechatFragment---createFragments---name = ${chapterData.name}")
-            arr.add(FragmentPage(WechatArticleFragment(), chapterData.name))
+            arr.add(FragmentPage(WechatArticleFragment.newInstance(chapterData.id), chapterData.name))
         }
         viewPageAdapter.fragmentPageData.addAll(arr)
     }
