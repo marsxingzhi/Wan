@@ -61,8 +61,8 @@ class MainActivity : BaseActivity() {
 
     private fun initNavigation() {
         navigationController.apply {
-            selectProperItem()
             updateView()
+            selectProperItem()
         }
     }
 
@@ -82,7 +82,7 @@ class MainActivity : BaseActivity() {
     private fun onNavigationItemChanged(item: NavigationItem) {
         drawerLayout.afterClosed {
             showFragment(R.id.fragmentContainer, item.fragmentClass, item.arguments)
-            title = item.title
+            toolBar.title = item.title
         }
     }
 

@@ -45,7 +45,7 @@ data class Article(
     var superChapterId: Int,
     var superChapterName: String,
     var tags: ArrayList<ArticleTag?>?,
-    var title: String,
+    var title: String?,
     var type: Int,
     var userId: Int,
     var visible: Int,

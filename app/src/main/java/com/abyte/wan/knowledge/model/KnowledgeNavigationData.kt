@@ -10,5 +10,5 @@ import kotlinx.android.parcel.Parcelize
 data class KnowledgeNavigationData(
     var name: String,
     var cid: Int,
-    var articles: ArrayList<Article>
+    var articles: ArrayList<Article>?
 ) : Parcelable

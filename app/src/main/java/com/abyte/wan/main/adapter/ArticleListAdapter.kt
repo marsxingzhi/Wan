@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.abyte.core.ext.log
 import com.abyte.wan.R
 import com.abyte.wan.core.base.adapter.CommonCardListAdapter
+import com.abyte.wan.ext.loadWithGlide
 import com.abyte.wan.main.model.Article
 import kotlinx.android.synthetic.main.item_article.view.*
 
@@ -30,7 +31,7 @@ class ArticleListAdapter : CommonCardListAdapter<Article>(R.layout.item_article)
             }
             articleTime.text = article.niceDate
             if (!TextUtils.isEmpty(article.envelopePic)) {
-                // TODO("加载图片")
+                articleImg.loadWithGlide(article.envelopePic)
                 articleImg.visibility = View.VISIBLE
             } else {
                 articleImg.visibility = View.GONE
