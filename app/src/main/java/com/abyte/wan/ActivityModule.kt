@@ -7,6 +7,7 @@ import com.abyte.wan.main.MainActivity
 import com.abyte.wan.main.vm.MainFragmentModule
 import com.abyte.wan.rank.RankActivity
 import com.abyte.wan.rank.module.RankModule
+import com.abyte.wan.web.WebActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -30,4 +31,8 @@ abstract class ActivityModule {
     @PerActivity
     @ContributesAndroidInjector(modules = [RankModule::class])
     abstract fun contributeRankActivity(): RankActivity
+
+    @PerActivity
+    @ContributesAndroidInjector
+    abstract fun contributeWebActivity(): WebActivity
 }

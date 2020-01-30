@@ -43,7 +43,7 @@ class MainFragment : BaseFragment() {
             R.color.google_blue
         )
 
-        articleListAdapter = ArticleListAdapter()
+        articleListAdapter = ArticleListAdapter(activity as MainActivity)
         recyclerView.adapter = LuRecyclerViewAdapter(articleListAdapter)
         recyclerView.setLoadMoreEnabled(true)
         recyclerView.layoutManager =

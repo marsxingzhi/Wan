@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.abyte.core.di.ViewModelFactory
 import com.abyte.wan.R
 import com.abyte.wan.core.base.ui.BaseFragment
+import com.abyte.wan.main.MainActivity
 import com.abyte.wan.main.adapter.ArticleListAdapter
 import com.abyte.wan.main.model.ArticlePage
 import com.abyte.wan.wechat.vm.WechatViewModel
@@ -39,7 +40,7 @@ class WechatArticleFragment : BaseFragment() {
             R.color.google_green,
             R.color.google_blue
         )
-        articleListAdapter = ArticleListAdapter()
+        articleListAdapter = ArticleListAdapter(activity as MainActivity)
         recyclerView.apply {
             adapter = LuRecyclerViewAdapter(articleListAdapter)
             setLoadMoreEnabled(true)
