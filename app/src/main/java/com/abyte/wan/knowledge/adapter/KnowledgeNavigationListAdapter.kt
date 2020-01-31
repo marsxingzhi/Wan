@@ -7,13 +7,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.abyte.core.ext.log
 import com.abyte.wan.R
 import com.abyte.wan.core.base.adapter.CommonCardListAdapter
-import com.abyte.wan.knowledge.model.ChapterData
 import com.abyte.wan.knowledge.model.KnowledgeNavigationData
 import com.google.android.flexbox.FlexboxLayout
 import kotlinx.android.synthetic.main.layout_item_system_tree.view.*
+import org.jetbrains.anko.sdk15.listeners.onClick
 import java.util.*
 
-class KnowledgeNavigationListAdapter :
+class KnowledgeNavigationListAdapter(private val onItemClick: (String) -> Unit) :
     CommonCardListAdapter<KnowledgeNavigationData>(R.layout.layout_item_system_tree) {
 
     private var layoutInflater: LayoutInflater? = null
@@ -31,6 +31,9 @@ class KnowledgeNavigationListAdapter :
                 for (i in 0 until item.articles!!.size) {
                     flexBox.addView(getFlexItemTextView(flexBox).apply {
                         text = item.articles!![i].title ?: "无数据"
+                        onClick {
+                            onItemClick(item.articles!![i].link)
+                        }
                     })
                 }
             }

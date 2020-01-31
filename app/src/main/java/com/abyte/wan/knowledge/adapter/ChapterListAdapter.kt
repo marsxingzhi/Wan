@@ -12,13 +12,15 @@ import com.google.android.flexbox.FlexboxLayout
 import kotlinx.android.synthetic.main.layout_item_system_tree.view.*
 import java.util.*
 
-class ChapterListAdapter : CommonCardListAdapter<ChapterData>(R.layout.layout_item_system_tree) {
+class ChapterListAdapter(private val clickDetailArticles: (ChapterData) -> Unit) :
+    CommonCardListAdapter<ChapterData>(R.layout.layout_item_system_tree) {
 
     private var layoutInflater: LayoutInflater? = null
 
     private val mFlexItemTextViewCaches = LinkedList<TextView>()
 
     override fun onItemClick(itemView: View, item: ChapterData) {
+        clickDetailArticles(item)
     }
 
     override fun bindData(viewHolder: RecyclerView.ViewHolder, item: ChapterData) {

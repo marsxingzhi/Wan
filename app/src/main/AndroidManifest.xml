@@ -24,6 +24,7 @@
         <activity android:name=".login.LoginActivity" />
         <activity android:name=".rank.RankActivity" />
         <activity android:name=".web.WebActivity" />
+        <activity android:name=".knowledge.KnowledgeActivity" />
     </application>
 
 </manifest>

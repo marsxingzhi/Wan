@@ -1,6 +1,9 @@
 package com.abyte.wan
 
 import com.abyte.core.di.PerActivity
+import com.abyte.wan.knowledge.KnowledgeActivity
+import com.abyte.wan.knowledge.module.KnowledgeArticlesFragmentModule
+import com.abyte.wan.knowledge.module.KnowledgeModule
 import com.abyte.wan.login.LoginActivity
 import com.abyte.wan.login.vm.LoginModule
 import com.abyte.wan.main.MainActivity
@@ -35,4 +38,8 @@ abstract class ActivityModule {
     @PerActivity
     @ContributesAndroidInjector
     abstract fun contributeWebActivity(): WebActivity
+
+    @PerActivity
+    @ContributesAndroidInjector(modules = [KnowledgeArticlesFragmentModule::class])
+    abstract fun contributeKnowledgeActivity(): KnowledgeActivity
 }

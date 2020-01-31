@@ -1,5 +1,6 @@
 package com.abyte.wan.knowledge
 
+import android.content.Context
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.Observer
@@ -9,8 +10,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.abyte.core.di.ViewModelFactory
 import com.abyte.core.ext.log
 import com.abyte.wan.R
+import com.abyte.wan.core.base.ui.BaseActivity
 import com.abyte.wan.core.base.ui.BaseFragment
 import com.abyte.wan.knowledge.adapter.ChapterListAdapter
+import com.abyte.wan.knowledge.model.ChapterData
 import com.abyte.wan.knowledge.vm.KnowledgeViewModel
 import com.github.jdsjlzx.recyclerview.LuRecyclerViewAdapter
 import kotlinx.android.synthetic.main.frargment_system_tree.*
@@ -22,9 +25,17 @@ class SystemTreeFragment : BaseFragment() {
 
     private lateinit var chapterListAdapter: ChapterListAdapter
 
+    private lateinit var mActivity: BaseActivity
+
 
     @Inject
     lateinit var mFactory: ViewModelFactory
+
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        mActivity = context as BaseActivity
+    }
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -33,7 +44,7 @@ class SystemTreeFragment : BaseFragment() {
         knowledgeViewModel =
             ViewModelProviders.of(this, mFactory).get(KnowledgeViewModel::class.java)
 
-        chapterListAdapter = ChapterListAdapter()
+        chapterListAdapter = ChapterListAdapter(::clickDetailArticles)
         systemRecycler.adapter = LuRecyclerViewAdapter(chapterListAdapter)
         systemRecycler.setLoadMoreEnabled(false)
         systemRecycler.layoutManager =
@@ -62,6 +73,10 @@ class SystemTreeFragment : BaseFragment() {
 
     private fun initData() {
         knowledgeViewModel.getChapterList()
+    }
+
+    private fun clickDetailArticles(item: ChapterData) {
+        KnowledgeActivity.startKnowledgeActivity(mActivity, item)
     }
 
     override fun getLayoutId(): Int {

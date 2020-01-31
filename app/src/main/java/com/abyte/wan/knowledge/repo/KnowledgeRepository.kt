@@ -4,6 +4,7 @@ import com.abyte.core.utils.RxUtil
 import com.abyte.wan.knowledge.api.KnowledgeApi
 import com.abyte.wan.knowledge.model.ChapterData
 import com.abyte.wan.knowledge.model.KnowledgeNavigationData
+import com.abyte.wan.main.model.ArticlePage
 import io.reactivex.Observable
 
 class KnowledgeRepository(private val api: KnowledgeApi) {
@@ -17,6 +18,12 @@ class KnowledgeRepository(private val api: KnowledgeApi) {
 
     fun getKnowledgeNaviList(): Observable<List<KnowledgeNavigationData>> {
         return api.getKnowledgeNaviList()
+            .compose(RxUtil.applySchedulers())
+            .compose(RxUtil.handleResult())
+    }
+
+    fun getKnowledgeArticlesByChildrenId(page: Int, cid: Int): Observable<ArticlePage> {
+        return api.getKnowledgeArticlesByChildrenId(page, cid)
             .compose(RxUtil.applySchedulers())
             .compose(RxUtil.handleResult())
     }
