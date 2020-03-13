@@ -6,8 +6,8 @@ import com.abyte.core.exception.ApiErrorCode
 import com.abyte.core.exception.ApiException
 import com.abyte.core.ext.log
 import com.abyte.core.rx.RxViewModel
+import com.abyte.user.manager.UserManager
 import com.abyte.wan.login.repo.LoginRepository
-import com.abyte.wan.user.UserManager
 
 class LoginViewModel(private val repo: LoginRepository) : RxViewModel() {
 

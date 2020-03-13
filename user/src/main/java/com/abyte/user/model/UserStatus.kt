@@ -1,4 +1,4 @@
-package com.abyte.wan.user.model
+package com.abyte.user.model
 
 import androidx.annotation.IntDef
 

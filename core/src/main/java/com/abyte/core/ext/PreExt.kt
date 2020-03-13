@@ -1,7 +1,7 @@
-package com.abyte.wan.ext
+package com.abyte.core.ext
 
-import com.abyte.wan.AppContext
-import com.abyte.wan.utils.Preference
+import com.abyte.core.AppContext
+import com.abyte.core.utils.Preference
 import kotlin.reflect.jvm.jvmName
 
 inline fun <reified R, T> R.pref(default: T) = Preference(AppContext, "", default, R::class.jvmName)

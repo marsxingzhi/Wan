@@ -2,12 +2,12 @@ package com.abyte.wan.main.nav
 
 import android.view.MenuItem
 import com.abyte.core.ext.log
+import com.abyte.user.manager.UserManager
 import com.abyte.wan.R
 import com.abyte.wan.core.config.Settings
 import com.abyte.wan.ext.doOnLayoutAvailable
 import com.abyte.wan.ext.loadWithGlide
 import com.abyte.wan.ext.selectItem
-import com.abyte.wan.user.UserManager
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.main_nav_header.view.*
 import org.jetbrains.anko.imageResource

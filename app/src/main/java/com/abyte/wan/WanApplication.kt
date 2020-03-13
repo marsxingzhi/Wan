@@ -2,6 +2,7 @@ package com.abyte.wan
 
 import android.app.Application
 import android.content.ContextWrapper
+import com.abyte.core.AppContextUtil
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
 
@@ -16,7 +17,6 @@ class WanApplication : DaggerApplication() {
     override fun onCreate() {
         super.onCreate()
         INSTANCE = this
+        AppContextUtil.setContext(this)
     }
 }
-
-object AppContext: ContextWrapper(INSTANCE)

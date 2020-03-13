@@ -1,4 +1,4 @@
-package com.abyte.wan.utils
+package com.abyte.core.utils
 
 import android.content.Context
 import kotlin.properties.ReadWriteProperty

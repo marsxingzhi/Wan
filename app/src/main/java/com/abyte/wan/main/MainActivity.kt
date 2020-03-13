@@ -11,12 +11,12 @@ import com.abyte.wan.ext.afterClosed
 import com.abyte.core.ext.otherwise
 import com.abyte.wan.ext.showFragment
 import com.abyte.core.ext.yes
+import com.abyte.user.manager.UserManager
+import com.abyte.user.model.UserEvent
 import com.abyte.wan.login.LoginActivity
 import com.abyte.wan.main.nav.NavigationController
 import com.abyte.wan.main.nav.NavigationItem
 import com.abyte.wan.rank.RankActivity
-import com.abyte.wan.user.UserManager
-import com.abyte.wan.user.model.UserEvent
 import com.abyte.wan.view.ActionBarController
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.app_bar_simple.*

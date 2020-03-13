@@ -1,6 +1,8 @@
-package com.abyte.wan.user.model
+package com.abyte.user.model
 
-import com.abyte.wan.login.model.User
+import com.abyte.user.model.User
+import com.abyte.user.model.UserStatus
+
 
 class UserEvent(private val user: User?, @UserStatus private val status: Int) {
 

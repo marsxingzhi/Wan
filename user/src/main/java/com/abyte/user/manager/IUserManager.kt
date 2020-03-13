@@ -1,7 +1,7 @@
-package com.abyte.wan.user
+package com.abyte.user.manager
 
-import com.abyte.wan.login.model.User
-import com.abyte.wan.user.model.UserEvent
+import com.abyte.user.model.User
+import com.abyte.user.model.UserEvent
 import io.reactivex.Observable
 
 interface IUserManager {

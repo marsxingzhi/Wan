@@ -1,9 +1,9 @@
 package com.abyte.wan.core.config
 
-import com.abyte.wan.AppContext
+import com.abyte.core.AppContext
+import com.abyte.core.ext.pref
 import com.abyte.wan.R
 import com.abyte.wan.account.AccountManager
-import com.abyte.wan.ext.pref
 
 object Settings {
 

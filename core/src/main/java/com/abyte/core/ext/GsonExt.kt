@@ -1,4 +1,4 @@
-package com.abyte.wan.ext
+package com.abyte.core.ext
 
 import com.google.gson.Gson
 

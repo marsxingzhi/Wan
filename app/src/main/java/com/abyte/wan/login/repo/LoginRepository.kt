@@ -1,8 +1,8 @@
 package com.abyte.wan.login.repo
 
 import com.abyte.core.utils.RxUtil
+import com.abyte.user.model.User
 import com.abyte.wan.login.api.LoginApi
-import com.abyte.wan.login.model.User
 import io.reactivex.Observable
 
 class LoginRepository(private val loginApi: LoginApi) {

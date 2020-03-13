@@ -1,8 +1,8 @@
 package com.abyte.wan.account
 
 import com.abyte.core.response.SUCCESS
+import com.abyte.user.manager.UserManager
 import com.abyte.wan.login.api.LoginService
-import com.abyte.wan.user.UserManager
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 

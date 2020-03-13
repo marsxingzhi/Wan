@@ -2,7 +2,7 @@ package com.abyte.wan.login.api
 
 import com.abyte.core.response.BaseResponse
 import com.abyte.core.services.retrofit
-import com.abyte.wan.login.model.User
+import com.abyte.user.model.User
 import io.reactivex.Observable
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded

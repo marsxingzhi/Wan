@@ -1,4 +1,4 @@
-package com.abyte.wan.login.model
+package com.abyte.user.model
 
 import android.os.Parcelable
 import com.abyte.core.anno.PoKo
