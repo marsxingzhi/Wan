@@ -6,6 +6,7 @@ import android.text.TextUtils
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.abyte.core.ext.log
+import com.abyte.core.widgets.LikeView
 import com.abyte.wan.R
 import com.abyte.wan.core.base.adapter.CommonCardListAdapter
 import com.abyte.wan.core.base.ui.BaseActivity
@@ -13,10 +14,20 @@ import com.abyte.wan.ext.loadWithGlide
 import com.abyte.wan.main.model.Article
 import com.abyte.wan.web.WebActivity
 import kotlinx.android.synthetic.main.item_article.view.*
+import org.jetbrains.anko.sdk15.listeners.onClick
 import org.jetbrains.anko.toast
+import java.util.*
 
-class ArticleListAdapter(private val context: Context) :
+class ArticleListAdapter constructor(private val context: Context) :
     CommonCardListAdapter<Article>(R.layout.item_article) {
+
+    private lateinit var clickLike: (Boolean) -> Unit
+
+    constructor(context: Context, clickLike: (Boolean) -> Unit) : this(context) {
+        this.clickLike = clickLike
+    }
+
+    private val random = Random()
 
     override fun onItemClick(itemView: View, article: Article) {
         log("ArticleAdapter---onItemClick")
@@ -58,6 +69,21 @@ class ArticleListAdapter(private val context: Context) :
             articleTagTop.visibility = if (article.top) View.VISIBLE else View.GONE
             articleChapter.text =
                 Html.fromHtml(formatChapterName(article.superChapterName, article.chapterName))
+
+            // TODO，暂时没有收藏数，随机一下
+            likeView.setLikeCount(random.nextInt(2020))
+            likeView.setLike(article.collect)
+
+            // TODO 这里被拦截了，执行不到
+            likeView.onClick {
+                clickLike((it as LikeView).isLike())
+            }
+            // 下面方法会导致栈溢出
+//            likeView.setOnItemClickLikeListener(object : LikeView.OnItemClickLikeListener{
+//                override fun clickLike(isLike: Boolean) {
+//                    clickLike(isLike)
+//                }
+//            })
         }
     }
 
@@ -72,5 +98,26 @@ class ArticleListAdapter(private val context: Context) :
                 }
             }
         }.toString()
+    }
+
+    override fun onAttachedToRecyclerView(recyclerView: RecyclerView) {
+        super.onAttachedToRecyclerView(recyclerView)
+        log("onAttachedToRecyclerView")
+    }
+
+    override fun onDetachedFromRecyclerView(recyclerView: RecyclerView) {
+        super.onDetachedFromRecyclerView(recyclerView)
+        log("onDetachedFromRecyclerView")
+    }
+
+    // 当item view attach到window的时候就会调用，这里可以做一些埋点上报
+    override fun onViewAttachedToWindow(holder: RecyclerView.ViewHolder) {
+        super.onViewAttachedToWindow(holder)
+        log("onViewAttachedToWindow---holder = ${holder.adapterPosition}")
+    }
+
+    override fun onViewDetachedFromWindow(holder: RecyclerView.ViewHolder) {
+        super.onViewDetachedFromWindow(holder)
+        log("onViewDetachedFromWindow---holder = ${holder.adapterPosition}")
     }
 }

@@ -14,7 +14,7 @@
         android:scaleType="centerCrop"
         android:tint="@color/me_action_bar_overlay" />
 
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    <com.abyte.core.widgets.SwipeRefreshLayoutCompat
         android:id="@+id/refreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -435,7 +435,7 @@
 
         </androidx.core.widget.NestedScrollView>
 
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </com.abyte.core.widgets.SwipeRefreshLayoutCompat>
 
 
 </FrameLayout>

@@ -96,4 +96,6 @@ dependencies {
 
     implementation project(":core")
     implementation project(":user")
+
+    implementation 'com.squareup.leakcanary:leakcanary-android:2.2'
 }
